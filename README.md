@@ -226,7 +226,7 @@ pip install gdmix-trainer gdmix-workflow
 ```
 
 #### Train logsitic regression models
-A GDMix config [lr-single-node-movieLens.config](gdmix-workflow/examples/movielens-100k/lr-single-node-movieLens.config) is provided for the demo purpose, download it and start gdmix training with following command:
+A GDMix config [lr-movieLens.yaml](gdmix-workflow/examples/movielens-100k/lr-movieLens.yaml) is provided for the demo purpose, download it and start gdmix training with following command:
 ```
 wget https://raw.githubusercontent.com/linkedin/gdmix/master/gdmix-workflow/examples/movielens-100k/lr-single-node-movieLens.config
 
@@ -299,7 +299,7 @@ The metric for each model is summarized in the table below. As we can see, addin
 As a comparison, we'll train a neural network model supported by DeText for the fixed effect `global` and keep the random effect models unchanged.
 We added movie title as an additional feature for the `global` model, and the neural network is the [wide-and-deep ](https://arxiv.org/pdf/1606.07792.pdf) that the movie title is the "deep" and the rest of the features are "wide".
 
-We use the [detext-single-node-movieLens.config](gdmix-workflow/examples/movielens-100k/detext-single-node-movieLens.config) GDMix config to do the training:
+We use the [detext-movieLens.yaml](gdmix-workflow/examples/movielens-100k/detext-movieLens.yaml) GDMix config to do the training:
 ```
 wget https://raw.githubusercontent.com/linkedin/gdmix/master/gdmix-workflow/examples/movielens-100k/detext-single-node-movieLens.config
 
